@@ -15,14 +15,8 @@ public class CommandeAjouter extends CommandeDocument {
             System.err.println("Format attendu : ajouter;texte");
             return;
         }
-        //ajout commentaire pour commit
-        String debut = parameters[1];
-        String fin = parameters[2];
-        String texte="";
-        if (parameters.length>3) {
-            texte= parameters[3];
-        }
-        this.document.remplacer(Integer.parseInt(debut), Integer.parseInt(fin),texte);
+        String texte = parameters[1];
+        this.document.ajouter(texte);
         super.executer();
     }
 
