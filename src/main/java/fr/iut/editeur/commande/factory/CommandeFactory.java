@@ -20,7 +20,7 @@ public class CommandeFactory {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);
             case "remplacer" : return new CommandeRemplacer(document,parameters);
-            case "majusclues" : return new CommandeMajuscules(document,parameters);
+            case "majuscules" : return new CommandeMajuscules(document,parameters);
             default: return null;
         }
     }
