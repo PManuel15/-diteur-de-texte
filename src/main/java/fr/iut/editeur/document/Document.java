@@ -42,7 +42,7 @@ public class Document {
         texte = partieGauche +  partieDroite;
     }
     public void clear(){
-        texte="a";
+        texte="";
     }
 
 }
