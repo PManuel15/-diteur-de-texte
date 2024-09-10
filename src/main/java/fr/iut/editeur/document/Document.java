@@ -35,4 +35,11 @@ public class Document {
         partie =partie.toUpperCase();
         remplacer(debut, fin, partie);
     }
+    public void effacer(int debut, int fin){
+        String partieGauche = texte.substring(0, debut);
+        String partieDroite = texte.substring(fin );
+
+        texte = partieGauche +  partieDroite;
+    }
+
 }
