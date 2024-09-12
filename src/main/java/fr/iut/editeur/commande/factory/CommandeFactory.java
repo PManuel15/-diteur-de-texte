@@ -2,9 +2,13 @@ package fr.iut.editeur.commande.factory;
 
 import fr.iut.editeur.commande.*;
 import fr.iut.editeur.document.Document;
-
+/**
+ * Description de la classe
+ */
 public class CommandeFactory {
-
+    /**
+     * Description de la propriété
+     */
     private static CommandeFactory instance;
 
     public static CommandeFactory getInstance() {
